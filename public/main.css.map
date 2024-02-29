@@ -1,0 +1,21 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sourceRoot": "D:/TEST/hyas-hugo-v0.123.6",
+	"sources": [
+		"assets/scss/app.scss",
+		"assets/scss/common/_variables-custom.scss",
+		"node_modules/modern-css-reset/src/reset.css",
+		"assets/scss/components/_images.scss",
+		"assets/scss/common/_custom.scss"
+	],
+	"sourcesContent": [
+		"// Include any default variable overrides here\r\n@import \"common/variables-custom\";\r\n\r\n/** Import modern-css-reset */\r\n@import \"modern-css-reset/src/reset\";\r\n\r\n// Add additional custom code here\r\n@import \"components/images\";\r\n\r\n// Include custom styles\r\n@import \"common/custom\";\r\n",
+		"// Put your custom (S)CSS variables here\r\n:root {\r\n  --main-bg-color: yellowgreen;\r\n}\r\n",
+		"/* Box sizing rules */\n*,\n*::before,\n*::after {\n  box-sizing: border-box;\n}\n\n/* Remove default margin */\nbody,\nh1,\nh2,\nh3,\nh4,\np,\nfigure,\nblockquote,\ndl,\ndd {\n  margin: 0;\n}\n\n/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */\nul[role=\"list\"],\nol[role=\"list\"] {\n  list-style: none;\n}\n\n/* Set core root defaults */\nhtml:focus-within {\n  scroll-behavior: smooth;\n}\n\n/* Set core body defaults */\nbody {\n  min-height: 100vh;\n  text-rendering: optimizeSpeed;\n  line-height: 1.5;\n}\n\n/* A elements that don't have a class get default styles */\na:not([class]) {\n  text-decoration-skip-ink: auto;\n}\n\n/* Make images easier to work with */\nimg,\npicture {\n  max-width: 100%;\n  display: block;\n}\n\n/* Inherit fonts for inputs and buttons */\ninput,\nbutton,\ntextarea,\nselect {\n  font: inherit;\n}\n\n/* Remove all animations and transitions for people that prefer not to see them */\n@media (prefers-reduced-motion: reduce) {\n  html:focus-within {\n   scroll-behavior: auto;\n  }\n  *,\n  *::before,\n  *::after {\n    animation-duration: 0.01ms !important;\n    animation-iteration-count: 1 !important;\n    transition-duration: 0.01ms !important;\n    scroll-behavior: auto !important;\n  }\n}\n",
+		"img[data-sizes=\"auto\"] {\r\n  display: block;\r\n  width: 100%;\r\n}\r\n\r\n.figure {\r\n  display: block;\r\n}\r\n\r\n.blur-up {\r\n  filter: blur(5px);\r\n  transition: filter 400ms;\r\n}\r\n\r\n.blur-up.lazyloaded {\r\n  filter: unset;\r\n}\r\n",
+		"// Put your custom SCSS code here\r\nbody {\r\n  background-color: var(--main-bg-color);\r\n  text-align: center;\r\n}\r\n"
+	],
+	"names": [],
+	"mappings": "CCCC,AAAD,IAAK,CAAC;EACJ,eAAe,CAAA,YAAC,GACjB;;ADAD,8BAA8B;AEH9B,sBAAsB;AACtB,AAAA,CAAC;AACD,CAAC,EAAE,MAAM;AACT,CAAC,EAAE,KAAK,CAAC;EACP,UAAU,EAAE,UAAU,GACvB;;AAED,2BAA2B;AAC3B,AAAA,IAAI;AACJ,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,CAAC;AACD,MAAM;AACN,UAAU;AACV,EAAE;AACF,EAAE,CAAC;EACD,MAAM,EAAE,CAAC,GACV;;AAED,4GAA4G;AAC5G,AAAA,EAAE,CAAA,AAAA,IAAC,CAAK,MAAM,AAAX;AACH,EAAE,CAAA,AAAA,IAAC,CAAK,MAAM,AAAX,EAAa;EACd,UAAU,EAAE,IAAI,GACjB;;AAED,4BAA4B;AAC5B,AAAA,IAAI,CAAC,YAAY,CAAC;EAChB,eAAe,EAAE,MAAM,GACxB;;AAED,4BAA4B;AAC5B,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,KAAK;EACjB,cAAc,EAAE,aAAa;EAC7B,WAAW,EAAE,GAAG,GACjB;;AAED,2DAA2D;AAC3D,AAAA,CAAC,CAAA,GAAK,EAAA,AAAA,KAAC,AAAA,GAAQ;EACb,wBAAwB,EAAE,IAAI,GAC/B;;AAED,qCAAqC;AACrC,AAAA,GAAG;AACH,OAAO,CAAC;EACN,SAAS,EAAE,IAAI;EACf,OAAO,EAAE,KAAK,GACf;;AAED,0CAA0C;AAC1C,AAAA,KAAK;AACL,MAAM;AACN,QAAQ;AACR,MAAM,CAAC;EACL,IAAI,EAAE,OAAO,GACd;;AAED,kFAAkF;AAClF,MAAM,iCACJ;EAAA,AAAA,IAAI,CAAC,YAAY,CAAC;IACjB,eAAe,EAAE,IAAI,GACrB;EACD,AAAA,CAAC;EACD,CAAC,EAAE,MAAM;EACT,CAAC,EAAE,KAAK,CAAC;IACP,kBAAkB,EAAE,iBAAiB;IACrC,yBAAyB,EAAE,YAAY;IACvC,mBAAmB,EAAE,iBAAiB;IACtC,eAAe,EAAE,eAAe,GACjC,EARA;;AC/DH,AAAA,GAAG,CAAA,AAAA,UAAC,CAAW,MAAM,AAAjB,EAAmB;EACrB,OAAO,EAAE,KAAK;EACd,KAAK,EAAE,IAAI,GACZ;;AAED,AAAA,OAAO,CAAC;EACN,OAAO,EAAE,KAAK,GACf;;AAED,AAAA,QAAQ,CAAC;EACP,MAAM,EAAE,SAAS;EACjB,UAAU,EAAE,YAAY,GACzB;;AAED,AAAA,QAAQ,AAAA,WAAW,CAAC;EAClB,MAAM,EAAE,KAAK,GACd;;ACfD,AAAA,IAAI,CAAC;EACH,gBAAgB,EAAE,oBAAoB;EACtC,UAAU,EAAE,MAAM,GACnB"
+}
