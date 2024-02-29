@@ -8,7 +8,7 @@
 [[mounts]]
   source = "node_modules/@hyas/core/assets"
   target = "assets"
-  excludeFiles = ["scss/app.scss"]
+  # excludeFiles = ["scss/app.scss"]
 
 [[mounts]]
   source = "assets"
